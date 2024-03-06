@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>学号查询</title>
+<title>学号查询论坛默认账号</title>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -15,7 +15,7 @@
 </style>
 </head>
 <body>
-<h2>输入你的学号查询默认账号密码</h2>
+<h2>输入你的学号查询论坛默认账号密码</h2>
 <h2>注意：是默认账号，自己改了名 改了密码是没用的</h2>
 <input type="text" id="studentID" placeholder="学号">
 <button onclick="displayAccount()">确定</button>
@@ -55,7 +55,7 @@ var accountPasswordMap = {
     "27": {account: "5535c72f134340869073225dcf23aae6", password: "UwczE23M"},
     "28": {account: "d247b73bfe164857bba297bac8667905", password: "w73pOAPt"},
     "29": {account: "b40ad82e65a84e01b0dba397d5ec357a", password: "nq4K6YCp"},
-    "30": {account: "bf58367a239141228de0d452c618703d", password: "I7cvW3tS"},
+    "30": {account: "bf58367a239141228de0d452c618703d"， password: "I7cvW3tS"},
     "31": {account: "be1562cb4f3c4b77968f0989c5aa3b8f", password: "dIo0h2BT"},
     "32": {account: "95e9c667de3f4b6794abaed344d6cc1d", password: "1NTy4dBi"},
     "33": {account: "f3222cb10a864b098a89b164371141b5", password: "Rb9vDj4V"},
@@ -86,7 +86,7 @@ var accountPasswordMap = {
 
     if (accountPasswordMap.hasOwnProperty(studentID)) {
         var accountInfo = accountPasswordMap[studentID];
-        resultDiv.innerHTML = "你的默认账号是  " + "'" +accountInfo.account + "'" + "  ，默认密码是  " + accountInfo.password;
+        resultDiv.innerHTML = "你的论坛默认账号是  " + "'" +accountInfo.account + "'" + "  ，默认密码是  " + accountInfo.password;
     } else {
         resultDiv.innerHTML = "找不到学号对应的账号，请输入1~56号";
     }
